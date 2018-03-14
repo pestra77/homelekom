@@ -8939,6 +8939,7 @@ header {
 
 .works__reviews .reviews__slider {
   max-width: 192px;
+  width: 100%;
 }
 
 .works__reviews .reviews__slider .arrow {

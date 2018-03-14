@@ -816,6 +816,7 @@ header {
   &__reviews {
     .reviews__slider {
       max-width: 192px;
+      width: 100%;
       .arrow {
         display: flex;
         align-items: center;
