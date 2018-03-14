@@ -20,8 +20,11 @@ $(function(){
     var elementClick = $(this).attr("href");
     console.log(elementClick)
     var destination = $('#' + elementClick).offset().top;
-    $('html').animate({ scrollTop: destination }, 800);
-
+    if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+      $('body').animate({ scrollTop: destination }, 1100);
+    } else {
+      $('html').animate({ scrollTop: destination }, 800);
+    }
     return false;
   });
 });
