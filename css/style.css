@@ -8509,9 +8509,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -8791,6 +8788,7 @@ header {
   background-color: #f7f7f7;
   position: absolute;
   right: 0;
+  top: 0;
 }
 
 .value__total {
