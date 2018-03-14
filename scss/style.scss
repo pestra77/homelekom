@@ -1075,10 +1075,21 @@ footer {
     font-size: 18px;
     line-height: 37px;
     color: #b7c6d7!important;
-    width: 37px;
-    height: 37px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #dee5ef;
+    -webkit-transition: 0.2s;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border: 2px solid #dee5ef;
+    &:hover {
+      background-color: transparent;
+      color: #dee5ef!important;
+    }
+    i {
+      line-height: 1.5;
+    }
   }
 }
 .copyright {
