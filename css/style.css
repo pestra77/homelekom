@@ -8281,6 +8281,10 @@ header {
   height: 63px;
 }
 
+.navigation__mobile {
+  display: none;
+}
+
 .navigation__logo img {
   width: 34px;
 }
@@ -8353,6 +8357,44 @@ header {
 
 .navigation .city__item.active {
   background: #6c6b66;
+}
+
+.navigation .line-wrapp {
+  width: 18px;
+  height: 12px;
+  margin: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.navigation .active.line-wrapp {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.navigation .line {
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.navigation .line.center {
+  margin: 3px 0;
+}
+
+.navigation .active .line.top {
+  width: 12px;
+  -webkit-transform: translateX(8px) translateY(1px) rotate(45deg);
+  transform: translateX(8px) translateY(1px) rotate(45deg);
+}
+
+.navigation .active .line.bottom {
+  width: 12px;
+  -webkit-transform: translateX(8px) translateY(-1px) rotate(-45deg);
+  transform: translateX(8px) translateY(-1px) rotate(-45deg);
 }
 
 .menu {
@@ -10022,6 +10064,73 @@ footer {
   }
   .reviews__slider {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    z-index: 105;
+  }
+  .navigation__mobile {
+    display: block;
+    position: absolute;
+  }
+  .navigation__menu {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background: #494949;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    z-index: 100;
+    width: 200px;
+    height: 100vh;
+    padding-top: 70px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .navigation__menu:after {
+    display: none;
+    content: '';
+    position: absolute;
+    width: calc(100vw - 100%);
+    left: 100%;
+    height: 100vh;
+    top: 0;
+  }
+  .navigation__menu.active {
+    left: 0;
+  }
+  .navigation__menu.active:after {
+    display: block;
+  }
+  .navigation__menu .menu__item {
+    padding: 5px 5px;
+    color: #fff;
+  }
+  .navigation__logo {
+    text-align: center;
+  }
+  .navigation__city {
+    margin: 0;
+    width: 80px;
+  }
+  .navigation__city_left {
+    display: none;
   }
 }
 

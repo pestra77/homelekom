@@ -18,7 +18,6 @@ $(function(){
   $(".menu__link").click(function (e) {
     e.preventDefault();
     var elementClick = $(this).attr("href");
-    console.log(elementClick)
     var destination = $('#' + elementClick).offset().top;
     if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
       $('body').animate({ scrollTop: destination }, 1100);
@@ -61,4 +60,18 @@ $(function(){
     }
     // console.log()
   });
+
+  $(".navigation__mobile").click(function() {
+  	$(this).toggleClass("active");
+    $(".navigation__menu").toggleClass('active');
+  });
+
+  $('.navigation__menu').click(function(event) {
+    $('.navigation__mobile').toggleClass("active");
+    $(".navigation__menu").toggleClass('active');
+  });
+
+  if (document.width <= 768) {
+    $(".navigation__menu").prependTo('.wrapper');
+  }
 });
