@@ -10065,6 +10065,16 @@ footer {
   .reviews__slider {
     margin: 0 auto;
   }
+  .colors__slider {
+    max-width: none;
+    width: 100%;
+  }
+  .colors__slider img {
+    width: 100%;
+  }
+  .feedback__name p {
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
