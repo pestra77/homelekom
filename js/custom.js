@@ -27,4 +27,38 @@ $(function(){
     }
     return false;
   });
+
+  $(".navigation__city").click(function(event) {
+    $('.city__dropdown').toggleClass('city__dropdown_active');
+  });
+
+  $(".city__item").click(function(event) {
+    var val = $(this).text();
+    $(".city__item").each(function(index, el) {
+      $(this).removeClass("active");
+    });
+    $(this).addClass('active');
+    $(".navigation__city_right").text(val);
+  });
+
+  $('.checkbox__input').change(function(event) {
+    var val = $(this).val();
+    var currentSum = $('#total').html()
+    currentSum = currentSum.replace(/\s/g,'');
+    console.log(currentSum)
+    currentSum = +currentSum;
+    val = +val;
+    if ($(this).prop('checked')) {
+      var sum = currentSum + val;
+      var byS = Math.ceil(sum / 115);
+      $('#total').html(String(sum).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+      $('#price').html(String(byS).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    } else {
+      var min = currentSum - val;
+      var byM = Math.ceil(min / 115);
+      $('#total').html(String(min).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+      $('#price').html(String(byM).replace(/(\d)(?=(\d{3})+([^\d]|$))/g, '$1 '));
+    }
+    // console.log()
+  });
 });

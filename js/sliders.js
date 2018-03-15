@@ -1,45 +1,11 @@
 $(document).ready(function () {
   $(function(){
-    // $('.gallery__slider').slick({
-    //   dots: false,
-    //   infinite: true,
-    //   speed: 300,
-    //   slidesToShow: 6,
-    //   slidesToScroll: 1,
-    //   prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
-    //   nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
-    //   responsive: [
-    //    {
-    //      breakpoint: 1024,
-    //      settings: {
-    //        slidesToShow: 6,
-    //        slidesToScroll: 3,
-    //        infinite: true,
-    //      }
-    //    },
-    //    {
-    //      breakpoint: 600,
-    //      settings: {
-    //        slidesToShow: 2,
-    //        slidesToScroll: 2
-    //      }
-    //    },
-    //    {
-    //      breakpoint: 480,
-    //      settings: {
-    //        slidesToShow: 1,
-    //        slidesToScroll: 1
-    //      }
-    //    }
-    //   ]
-    // });
-
     $('.gallery__slider').slick({
       prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
-      centerMode: true,
+      centerMode: false,
       centerPadding: '0px',
-      slidesToShow: 6,
+      // slidesToShow: 6,
       responsive: [
         {
           breakpoint: 768,
@@ -48,15 +14,6 @@ $(document).ready(function () {
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
           }
         }
       ]
@@ -85,16 +42,16 @@ $(document).ready(function () {
       slidesToScroll: 1,
       asNavFor: '.works__slider',
       dots: false,
-      centerMode: true,
+      centerMode: false,
       focusOnSelect: true,
       prevArrow: '<div class="arrow-left arrow"><img src="./img/icons/slice-6.png"></div>',
       nextArrow: '<div class="arrow-right arrow"><img src="./img/icons/slice-8.png"></div>',
       responsive: [
        {
-         breakpoint: 1024,
+         breakpoint: 1200,
          settings: {
-           slidesToShow: 6,
-           slidesToScroll: 3,
+           slidesToShow: 4,
+           slidesToScroll: 1,
            infinite: true,
          }
        },
@@ -102,7 +59,7 @@ $(document).ready(function () {
          breakpoint: 600,
          settings: {
            slidesToShow: 2,
-           slidesToScroll: 2
+           slidesToScroll: 1
          }
        },
        {
