@@ -1743,6 +1743,8 @@ footer {
     &__mobile {
       display: block;
       position: absolute;
+      top: 25px;
+      left: 15px;
     }
     &__menu {
       -ms-flex-negative: 0;
@@ -1814,6 +1816,12 @@ footer {
       img {
         max-width: none;
         height: 100%;
+      }
+      &-right {
+        img {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+        }
       }
     }
   }

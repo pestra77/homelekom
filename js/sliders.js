@@ -55,7 +55,7 @@ $(document).ready(function () {
       centerMode: false,
       focusOnSelect: true,
       prevArrow: '<div class="arrow-left arrow"><img src="./img/icons/slice-6.png"></div>',
-      nextArrow: '<div class="arrow-right arrow"><img src="./img/icons/slice-8.png"></div>',
+      nextArrow: '<div class="arrow-right arrow"><img src="./img/icons/slice-6.png"></div>',
       responsive: [
        {
          breakpoint: 1200,
