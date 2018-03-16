@@ -5,23 +5,33 @@ $(document).ready(function () {
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
       centerMode: false,
       centerPadding: '0px',
-      // slidesToShow: 6,
+      slidesToShow: 6,
       responsive: [
         {
           breakpoint: 768,
           settings: {
-            arrows: false,
+            arrows: true,
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 3
           }
-        }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
       ]
     });
 
     $('.colors__slider').slick({
       prevArrow: '<div class="arrow-left arrow"><i class="fas fa-caret-left"></i></div>',
       nextArrow: '<div class="arrow-right arrow"><i class="fas fa-caret-right"></i></div>',
+      dots: true,
     });
 
     $('.works__slider').slick({
