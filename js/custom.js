@@ -74,4 +74,8 @@ $(function(){
   if (document.width <= 768) {
     $(".navigation__menu").prependTo('.wrapper');
   }
+
+  $('#send').click(function(event) {
+    $('#confirmModal').modal('show')
+  });
 });

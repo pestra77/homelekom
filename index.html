@@ -9,6 +9,62 @@
     <title>Homelekom - дома для жизни</title>
   </head>
   <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <form class="" action="index.html" method="post">
+            <div class="modal-header">
+              <div class="modal-logo">
+                <img src="./img/logos/small/hl.png" alt="">
+              </div>
+              <h5 class="modal-title" id="exampleModalLabel">Мы рады Вам позвонить</h5>
+            </div>
+            <div class="modal-body">
+              <div class="modal__input">
+                <input type="text" placeholder="ваше имя" name="" value="">
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="телефон" name="" value="">
+              </div>
+              <div class="modal__input">
+                <input type="text" placeholder="e-mail" name="" value="">
+              </div>
+              <div class="modal__info">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Нажимая “Отправить заявку”, вы  даете согласие
+                  на обработку данных
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button id="send" type="button" class="button" data-toggle="modal" data-target="#exampleModal" data-target="confirmModal">
+                Отправить заявку
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirmModal" aria-labelledby="confirmModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Благодарим Вас</h5>
+          </div>
+          <div class="modal-body">
+            <div class="modal__info">
+              <p>
+                Наш менеджер свяжется с Вами <br>
+                в течение 15 минут
+              </p>
+              <p class="phone"><img src="./img/logos/small/tel.png" alt=""></p>
+              <p class="sorry"> Если менеджер не перезвонил, сообщите по номеру</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header>
         <div class="container">
@@ -56,6 +112,11 @@
           <div class="banner__logo">
             <div class="container">
               <img src="img/logos/long/HOMELEKOM_logo_04.png" alt="Logo Homelekom">
+            </div>
+          </div>
+          <div class="banner__models">
+            <div class="container">
+              <img src="img/pictures/homelekom_models.png" alt="Models">
             </div>
           </div>
           <div class="banner__slider">
@@ -249,7 +310,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/foundation.png" alt="Фундамент">
                     </div>
                     <div class="complectation__text col-12 col-sm-6">
                       <p>
@@ -271,7 +332,7 @@
                 <div class="container">
                   <div class="other-side row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/carcass.png" alt="Каркас">
                     </div>
                     <div class="complectation__text col-12 col-sm-6 order-first">
                       <p>
@@ -283,7 +344,7 @@
                         тепла. Пяти-слойное утепление стен.
                       </p>
                       <p class="text_small">
-                        *параметры могут быть изменены согласно особенностях
+                        *параметры могут быть изменены согласно особенностям
                         земельного участка
                       </p>
                     </div>
@@ -294,15 +355,14 @@
                 <div class="container">
                   <div class="row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/roof.png" alt="Мягкая кровля">
                     </div>
                     <div class="complectation__text col-12 col-sm-6">
                       <p>
-                        В комплект <span class="text_bold">homelekom Model С</span>
-                        входят четыре уличные камеры, с ночным видением, с защитой
-                        от замерзания. Камеры включены в общую систему безопасности,
-                        для контроля из дома и удаленно. Так же дом оснащен системой
-                        контроля температуры, датчиками движения, противопожарной системой.
+                        В базовый комплект homelekom Model С входит мягкая,
+                        вентилируемая кровля Docke, с шести слойным утеплением
+                        каменной ватой, защитное покрытие M, по периметру установлена
+                        система отвода воды.
                       </p>
                     </div>
                   </div>
@@ -312,19 +372,19 @@
                 <div class="container">
                   <div class="other-side row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/accomplishment.png" alt="Благоустроенная территории">
                     </div>
                     <div class="complectation__text col-12 col-sm-6 order-first">
                       <p>
-                        В комплект <span class="text_bold">homelekom Model С</span>
-                        входят четыре уличные камеры, с ночным видением, с защитой
-                        от замерзания. Камеры включены в общую систему безопасности,
-                        для контроля из дома и удаленно. Так же дом оснащен системой
-                        контроля температуры, датчиками движения, противопожарной системой.
+                        В базовый комплект homelekom Model С включено обустройство
+                        территории: обводка дома рулонным газоном шириной 5 метров
+                        и фасадная территория размером 20x10 метров; отсыпка
+                        дорожек для подхода к дому и зоны парковки натуральным
+                        камнем; фронтальный декоративный забор.
                       </p>
                       <p class="text_small">
-                        *тип фундамента может быть изменен в зависимости от
-                        особенностей земельного участка
+                        *параметры могут быть изменн согласно особенностям
+                        земельного участка
                       </p>
                     </div>
                   </div>
@@ -334,15 +394,17 @@
                 <div class="container">
                   <div class="row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/decoration.png" alt="Чистовая отделка">
                     </div>
                     <div class="complectation__text col-12 col-sm-6">
                       <p>
-                        В комплект <span class="text_bold">homelekom Model С</span>
-                        входят четыре уличные камеры, с ночным видением, с защитой
-                        от замерзания. Камеры включены в общую систему безопасности,
-                        для контроля из дома и удаленно. Так же дом оснащен системой
-                        контроля температуры, датчиками движения, противопожарной системой.
+                        В базовый комплект homelekom Model С входит чистовая
+                        отделка: финишный пол в комнатах из высокостойкого
+                        ламината, в зонах спален из карпета, в санузлах из кафельной
+                        плитки; стены покрыты финишной моющейся краской высокого
+                        качества с отделкой декоративным каменей и натуральным
+                        деревом; натяжные потолки с точечным светом, межкомнатные
+                        двери и лестница с отделкой из дерева.
                       </p>
                     </div>
                   </div>
@@ -352,19 +414,19 @@
                 <div class="container">
                   <div class="other-side row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/furniture.png" alt="Мебель и техника">
                     </div>
                     <div class="complectation__text col-12 col-sm-6 order-first">
                       <p>
-                        В комплект <span class="text_bold">homelekom Model С</span>
-                        входят четыре уличные камеры, с ночным видением, с защитой
-                        от замерзания. Камеры включены в общую систему безопасности,
-                        для контроля из дома и удаленно. Так же дом оснащен системой
-                        контроля температуры, датчиками движения, противопожарной системой.
+                        В базовый комплект homelekom Model С включена кухонная
+                        мебель со встроенной техникой: холодильник, варочная
+                        панель, жарочный шкаф, стиральная машина, посудомоечная
+                        машина, вытяжка, полный комплект сантехники на кухне и
+                        в санузлах. Оборудование гардеробной и клозетов.
                       </p>
                       <p class="text_small">
-                        *тип фундамента может быть изменен в зависимости от
-                        особенностей земельного участка
+                        *марки и наименование техники представлены в полном
+                        техническом описании
                       </p>
                     </div>
                   </div>
@@ -374,7 +436,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/communications.png" alt="Коммуникации">
                     </div>
                     <div class="complectation__text col-12 col-sm-6">
                       <p>
@@ -396,7 +458,7 @@
                 <div class="container">
                   <div class="other-side row">
                     <div class="complectation__img col-12 col-sm-6">
-                      <img src="img/pictures/homelekom-sicurity.png" alt="Уличная камера">
+                      <img src="img/pictures/complectation/sicurity.png" alt="Уличная камера">
                     </div>
                     <div class="complectation__text col-12 col-sm-6 order-first">
                       <p>
@@ -574,7 +636,9 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="request__button">Отправить заявку</button>
+            <button type="button" class="button" data-toggle="modal" data-target="#exampleModal">
+              Отправить заявку
+            </button>
           </div>
         </section>
 
@@ -604,28 +668,26 @@
               </div>
               <div class="works__photo photo col-sm-6 col-12">
                 <div class="works__slider">
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/1.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/2.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/3.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/4.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/5.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/6.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/7.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/8.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/9.jpg" alt="Реализованный проект"></div>
                 </div>
                 <div class="works__carousel">
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
-                  <div><img src="img/pictures/homelekom_works_1.png" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/1.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/2.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/3.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/4.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/5.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/6.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/7.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/8.jpg" alt="Реализованный проект"></div>
+                  <div><img src="img/pictures/spa/9.jpg" alt="Реализованный проект"></div>
                 </div>
               </div>
             </div>
@@ -755,6 +817,7 @@
       </footer>
     </div>
     <script src="./js/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/sliders.js"></script>
     <script src="./js/custom.js"></script>
